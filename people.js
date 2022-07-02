@@ -1,8 +1,11 @@
-let peoples = ['aman','forhadul','yeapes'];
+const peoples = ['aman', 'forhadul', 'yeapes'];
 
 function test(params) {
     console.log('This is a test function');
 }
 
-
-module.exports = peoples;
+// console.log(module);
+module.exports = {
+    peoples,
+    test,
+};
