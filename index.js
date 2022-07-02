@@ -10,3 +10,7 @@ const fs = require('fs');
 
 fs.writeFileSync('hello.txt','Hello World!');
 fs.appendFileSync('hello.txt','I\'m from bangladesh');
+
+const data = fs.readFileSync('hello.txt');
+
+console.log(data.toString());
