@@ -24,10 +24,12 @@ const emitter = new EventEmitter();
 console.log("Class Started");
 
 
-//Event fire or Raise Event
-emitter.emit('Horn');
-
 //Register Listener for Horn
-emitter.on('Horn', () =>{
+emitter.on('Horn', (arg) =>{
+    console.log(arg);
     console.log("In Jam! Peeep! Peep!");
 })
+
+//Event fire or Raise Event
+emitter.emit('Horn',"events fired");
+
