@@ -7,6 +7,6 @@ class School extends EventEmitter{
             this.emit('bellRing');
         },1000);
     }
-}
+} 
 
 module.exports = School;
